@@ -1,0 +1,455 @@
+/* Basic styling */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: #111;
+}
+nav {
+    background: #222;
+    padding: 0 15px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.menu {   
+    list-style-type: none;
+}
+.logo {
+    font-size: 20px;
+    padding: 7.5px 10px 7.5px 0;
+}
+.item {
+    padding: 10px;
+}
+.item.button {
+    padding: 9px 5px;
+}
+.item:not(.button) a:hover,
+.item a:hover::after {
+    color: #ccc;
+}
+
+/*.................Mobile screen...................................*/
+
+/* Mobile menu */
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu li a {
+    display: block;
+    padding: 15px 5px;
+}
+
+.item {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+
+
+
+/* Tablet menu */
+@media all and (min-width: 700px) {
+    .menu {
+        align-items: flex-start;     
+        flex-wrap: nowrap;
+        background: none;   
+    }
+    .logo {
+        flex: 1;
+    }
+    
+}
+
+
+/* Desktop menu */
+@media all and (min-width: 960px) {
+    .menu {
+        align-items: flex-start;     
+        flex-wrap: nowrap;
+        background: none;
+    }
+    .logo {
+        order: 0;
+    }
+    .item {
+        order: 1;
+        position: relative;
+        display: block; 
+        width: auto;
+    }
+    
+    }
+   
+  
+ h1 p {
+    
+    color: white;
+}  
+    
+.hero {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+  
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.hero-content{
+    display: inline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px; 
+}
+.hero-content{
+    flex: 1 1 30%;
+    padding: 40px;
+    margin: 10px;
+    min-width: 200px;
+   
+    color: white;
+    text-align: center;
+}
+.hero-img{
+    width: 100%;
+    height: auto;
+}
+.facebook{
+    width: 40px;
+    height: 40px;
+    border: 2px;
+    border-radius: 50px;
+    margin: 30px 10px;
+}
+.facebook:hover {
+    opacity: 0.7;
+}
+.github{
+    width: 40px;
+    height: 40px;
+    border: 2px;
+    border-radius: 50px;
+    margin: 30px 10px;
+}
+.github:hover {
+    opacity: 0.7;
+}
+.linkdin{
+    width: 40px;
+    height: 40px;
+    border: 2px;
+    border-radius: 50px;
+    margin: 30px 10px;
+}
+.linkdin:hover {
+    opacity: 0.7;
+}
+.watsapp{
+    width: 40px;
+    height: 40px;
+    border: 2px;
+    border-radius: 50px;
+    margin: 30px 10px;
+}
+.watsapp:hover {
+    opacity: 0.7;
+}
+
+.hero-p, .hero-h3 {
+    color: white;
+    font-size: 25px;
+    font-weight: 250px;
+    text-align: left;
+    margin: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.hero-h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 300px;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.hero-p1 {
+    color: white;
+    font-size: 15px;
+    font-weight: 150px;
+    text-align: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.hero-item1{
+    display: block;
+    font-size: 40px;
+    margin: 50px;
+    text-align: center;
+}
+.hero-social ul {
+    display: inline;
+    width: 5px;
+    height: 5px;
+}
+.footer{
+    text-align: center;
+    color: white;
+}
+.introduction{
+    color: aliceblue;
+}
+/* Media queries for responsiveness*/
+/*Larger screen >760px */
+@media(min-width:760px){
+    .container-item{
+        flex: 1 1 30%;
+    }
+}
+
+.service-header{
+
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.service-content{
+    display: flex;
+    flex-wrap: wrap;/* moves element to next line incase it can not fit*/
+    justify-content: space-around;
+    padding: 20px;
+}
+.service-item{
+    flex: 1 1 30%;
+    padding: 40px;
+    margin: 10px;
+    min-width: 200px;
+    background-color: rgb(77, 233, 77);
+    color: white;
+    text-align: center;
+}
+
+h1 p {
+   
+   color: white;
+}  
+ /* Style inputs */
+ input[type=text], select, textarea {
+   width: 100%;
+   padding: 12px;
+   border: 1px solid #ccc;
+   margin-top: 6px;
+   margin-bottom: 16px;
+   resize: vertical;
+ }
+ 
+ input[type=submit] {
+   background-color: #04AA6D;
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   cursor: pointer;
+   border-radius: 10px;
+   width: 200px;
+   height: 50px;
+ }
+ 
+ input[type=submit]:hover {
+   background-color: #45a049;
+ }
+   
+ /* Create two columns that float next to eachother */
+ .column {
+   float: left;
+   width: 50%;
+   margin-top: 6px;
+   padding: 20px;
+ }
+ 
+ /* Clear floats after the columns */
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+
+ .col-8{
+   text-align: center;
+   color: #f2f2f2;
+   margin: 25px;
+ }
+ 
+ .contact-section {
+   color: white;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   padding: 20px;
+}
+ 
+ .contact-container{
+   flex: 1 1 30%;
+   padding: 40px;
+   margin: 10px;
+   min-width: 200px;
+   background-color: rgb(72, 75, 72);
+   color: white;
+   justify-content: space-around;
+   padding: 20px; 
+
+}
+.Address {
+    margin: 15px;
+}
+.email {
+    margin: 15px;
+}
+.call {
+    margin: 15px;
+} 
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  @media(min-width:760px){
+    body{
+        flex: 1 1 30%;
+    }
+}
+/*small screens <760px*/
+@media(max-width:760px){
+    body{
+        flex: 1 1 45%;
+    }
+}
+@media(max-width:480px){
+    body{
+        flex: 1 1 100%;
+    }
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.social {
+    display: flex;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    margin: 20px;
+   
+}
+
+.facebook{
+    width: 40px;
+    height: 40px;
+    border: 2px;
+    border-radius: 50px;
+    margin: 30px 10px;
+}
+.facebook:hover {
+    opacity: 0.7;
+}
+.github{
+    width: 40px;
+    height: 40px;
+    border: 2px;
+    border-radius: 50px;
+    margin: 30px 10px;
+}
+.github:hover {
+    opacity: 0.7;
+}
+.linkdin{
+    width: 40px;
+    height: 40px;
+    border: 2px;
+    border-radius: 50px;
+    margin: 30px 10px;
+}
+.linkdin:hover {
+    opacity: 0.7;
+}
+.watsapp{
+    width: 40px;
+    height: 40px;
+    border: 2px;
+    border-radius: 50px;
+    margin: 30px 10px;
+}
+.watsapp:hover {
+    opacity: 0.7;
+}
+.footer-hr {
+    opacity: 0.2;
+    margin: 10px
+}
+.footer-p{
+    font-weight: 400;
+    color: #45a049;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.credits{
+    color: #45a049;
+}
+
+
+.about-h1{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+.p-about {
+    text-align: center;
+    color: white;
+}
+.About-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.About-details {
+    display: inline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px; 
+}
+#About-details1{
+    color: white;
+    margin: 15px;
+}
+.about-list {
+    margin: 15px 0px 15px;
+    padding: 20px;
+    list-style: square;
+}
+.about-img {
+    width: 100%;
+    height: auto;
+}
